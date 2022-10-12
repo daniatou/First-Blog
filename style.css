@@ -10,6 +10,18 @@
     --secondary: rgba(0, 0, 0, 0.7);
 }
 
+.pt {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+p {
+    opacity: 0.5;
+}
+
 header {
     display: flex;
     justify-content: space-around;
@@ -97,7 +109,7 @@ header img {
     border: 1px solid white;
     top: 5px;
     left: 12px;
-    animation: souris 1s linear 0s infinite;
+    animation: souris 1.5s linear 0s infinite normal forwards;
 }
 
 @keyframes souris {
@@ -108,6 +120,28 @@ header img {
 
     to {
         top: 25px;
+        opacity: 5%;
     }
+}
 
+.service {
+    text-align: center;
+    padding: 30px;
+}
+
+.service-item {
+    width: 30%;
+    text-align: left;
+    border: 1px solid gainsboro;
+    padding: 30px;
+}
+
+.service-item small {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
 }
