@@ -180,3 +180,34 @@ header img {
 .about-img img {
     max-width: 250px;
 }
+
+.portfolio{
+   text-align: center;
+}
+
+.portofolio-nav{
+    border: 2px solid gainsboro;
+    width: 400px;
+    margin: 30px auto;
+    border-radius: 30px;
+}
+
+.portofolio-nav ul li{
+    display: inline-block;
+    padding: 13px 20px;
+   
+}
+
+.portofolio-nav li:first-child{
+    background-color: var(--primary);
+    border-radius: 30px;
+    margin-left: -12px;
+    color: white;
+}
+
+.portofolio-nav li:nth-last-child(-n+3):hover{
+    background-color: var(--primary);
+    border-radius: 30px;
+    color: white;
+
+}
