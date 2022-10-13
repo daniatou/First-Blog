@@ -209,5 +209,12 @@ header img {
     background-color: var(--primary);
     border-radius: 30px;
     color: white;
+}
 
+.portfolio-img-containers{
+    display: flex;
+}
+
+.portfolio-img-container{
+    width: 30%;
 }
