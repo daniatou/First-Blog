@@ -10,6 +10,8 @@
     --secondary: rgba(0, 0, 0, 0.7);
 }
 
+
+
 .pt {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -19,6 +21,10 @@ h1,
 h2,
 h3{
     opacity: 0.8;
+}
+
+.opacity-1{
+    opacity: 1;
 }
 
 .important{
@@ -153,17 +159,19 @@ header img {
 .services-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .about {
     background-color: #f5f8fc;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .about-desc,
 .about-img {
-    width: 40%;
+    width: 550px;
 }
 
 .about-desc img {
@@ -213,8 +221,53 @@ header img {
 
 .portfolio-img-containers{
     display: flex;
+    flex-wrap: wrap;
+    height: 150vh;
+    justify-content: space-around;
+ 
+   
 }
 
 .portfolio-img-container{
-    width: 30%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+  
+}
+
+.portfolio-img-container  img{
+        width: 100%;
+        height: 100%;
+}
+
+.img{
+    position: relative;
+    overflow: hidden;
+    max-height: 100%;
+    
+}
+.overlay{
+    background-color: #ff6e42;
+    position: absolute;
+    opacity: 0.8;
+    width: 100%;
+    height: 99%;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    
+}
+.overlay-content{
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    /* bottom: 50%; */
+}
+.img:hover .overlay{
+    right: 0;
+    transition: all .5s;
+    transition-timing-function: ease-in-out;
 }
