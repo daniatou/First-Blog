@@ -7,9 +7,17 @@
     word-wrap: break-word;
 }
 
+
+
+/*------------------------------------ General styles -----------------------------*/
+
 :root {
     --primary: #ff6e42;
     --secondary: rgba(0, 0, 0, 0.7);
+}
+
+.mt {
+    margin-top: 30px;
 }
 
 
@@ -19,13 +27,14 @@
     padding-bottom: 20px;
 }
 
-.pl{
+.pl {
     padding-left: 20px;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     opacity: 0.8;
 }
 
@@ -53,6 +62,9 @@ a {
 .text-center {
     text-align: center;
 }
+
+
+/*------------------------------------ Header -----------------------------*/
 
 header {
     display: flex;
@@ -91,7 +103,7 @@ header ul li {
 
 }
 
-li button {
+button {
     background-color: var(--primary);
     padding: 15px 30px;
     border-radius: 35px;
@@ -156,6 +168,9 @@ header img {
     }
 }
 
+
+/*------------------------------------ Our Services -----------------------------*/
+
 .service {
     text-align: center;
     padding: 30px;
@@ -178,6 +193,9 @@ header img {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+
+/*------------------------------------ About Us -----------------------------*/
 
 .about {
     background-color: #f5f8fc;
@@ -205,6 +223,9 @@ header img {
 .about-img img {
     max-width: 250px;
 }
+
+
+/*------------------------------------ Portfolio -----------------------------*/
 
 .portfolio {
     text-align: center;
@@ -292,26 +313,122 @@ header img {
     transition-timing-function: ease-in-out;
 }
 
+
+/*------------------------------------ Articles -----------------------------*/
+
 .articles {
     background-color: #f5f8fc;
+
+    max-height: none;
 }
 
 .articles-container {
     display: flex;
-    height: 100vh;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: -30px;
+
 }
 
 .article-item {
     width: 350px;
-    box-shadow: 0px 0px 30px white;
+    box-shadow: 0px 0px 50px white;
     margin-bottom: 20px;
     padding-bottom: 50px;
+    background-color: white;
 }
 
 .article-item img {
     width: 350px;
+}
+
+/*------------------------------------ Testimonies -----------------------------*/
+
+
+.testimonies {
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.client {
+    width: 350px;
+    border: 1px solid gainsboro;
+    margin-right: 35px;
+}
+
+.client img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.client h3 {
+    padding: 10px;
+}
+
+.client-desc {
+    clear: left;
+}
+
+/*------------------------------------ footer -----------------------------*/
+
+footer{
+    background-image: url(images/section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: white;
+ 
+ 
+}
+
+.contact {
+    display: flex;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 3;
+}
+
+.adress {
+    width: 470px;
+}
+
+
+.form {
+    width: 500px;
+    z-index: 3;
+}
+
+input,
+textarea {
+    border: none;
+    border-bottom: 3px solid white;
+    padding: 20px 0px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 3px solid #ff6e42;
+}
+
+.copy{
+    width: 970px;
+    border-top: 1px solid gainsboro;
+    margin: auto;
+    z-index: 3;
+   
+}
+
+span{
+    color: #ff6e42;
+    cursor: pointer;
 }
