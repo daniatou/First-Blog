@@ -377,15 +377,15 @@ header img {
 
 /*------------------------------------ footer -----------------------------*/
 
-footer{
+footer {
     background-image: url(images/section.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     color: white;
- 
- 
+
+
 }
 
 .contact {
@@ -416,19 +416,32 @@ textarea {
     color: white;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-bottom: 3px solid #ff6e42;
 }
 
-.copy{
+.copy {
     width: 970px;
     border-top: 1px solid gainsboro;
     margin: auto;
     z-index: 3;
-   
+
 }
 
-span{
+span {
     color: #ff6e42;
     cursor: pointer;
+}
+
+
+/*------------------------------------ For media -----------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    header ul li {
+        display: none;
+    }
+
+
 }
